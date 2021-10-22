@@ -1,0 +1,55 @@
+<mat-card class="card-container">
+    <div class="header">Sign Up</div>
+    <form fxLayout="column" [formGroup]="signUpForm" >
+        <div>
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Name</mat-label>
+              <input type="text" matInput formControlName="name" placeholder="">
+              <mat-error *ngIf="signUpForm.controls['name'].hasError('required')">
+                Name is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+        </div>
+      <div>
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+            <mat-error *ngIf="signUpForm.controls['email'].hasError('email') && !signUpForm.controls['email'].hasError('required')">
+              Please enter a valid email address
+            </mat-error>
+            <mat-error *ngIf="signUpForm.controls['email'].hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input type="" matInput formControlName="password" placeholder="">
+          <mat-error *ngIf="signUpForm.controls['password'].hasError('required')">
+            Password is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Confirm Password</mat-label>
+          <input type="" matInput formControlName="confirm" placeholder="" [errorStateMatcher]="matcher">
+          <mat-error *ngIf="signUpForm.controls['confirm'].hasError('required')">
+            Password is <strong>required</strong>
+          </mat-error>
+          <mat-error *ngIf="signUpForm.hasError('notSame') && !signUpForm.controls['confirm'].hasError('required') ">
+            Both Password Should match
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </form> 
+    <div fxLayout="row" fxLayoutAlign="center start">
+      <button class="button-sign-in" mat-raised-button color="primary" (click)="signUp()">Sign UP</button>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center start">
+        <div class="sign-in" (click)="goToLogin()">Login</div>
+    </div>
+    
+  </mat-card>
+  

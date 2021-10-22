@@ -1,0 +1,14 @@
+{
+    "value": [
+      {
+        "name": "quiz",
+        "icon": "person",
+        "link": "quiz"
+      },
+      {
+        "name": "Leader Board",
+        "icon": "event",
+        "link": "leader-board"
+      }
+    ]
+}

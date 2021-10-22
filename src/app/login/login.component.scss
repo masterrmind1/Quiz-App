@@ -1,0 +1,28 @@
+.login-container{
+    background-image: url("../../assets/bg-01.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    .login-element{
+        // margin-right: 30px;
+        // margin-top: 30px;
+        // margin-bottom: 30px;
+        height: 100%;
+        ::ng-deep {
+        app-sign-in{
+            height: -webkit-fill-available;
+            height: -moz-available
+        }
+        }
+        ::ng-deep {
+        app-sign-up{
+            height: -webkit-fill-available;
+            height: -moz-available
+        }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+{
+  "value": [{
+          "name": "Space Quiz",
+          "id": 0,
+          "storageId": "space",
+          "image-link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9IQK815gknJAP9dQVwf69iQqFt9Y1731vmg&usqp=CAU",
+          "questions": [{
+                  "question": "Which planet looks reddish in the night sky?",
+                  "options": [
+                      { "value": "Saturn", "marks": 0 },
+                      { "value": "Mars", "marks": 1 },
+                      { "value": "Jupiter", "marks": 0 },
+                      { "value": "Mercury", "marks": 0 }
+                  ]
+              },
+              {
+                  "question": "Which female astronaut spent the maximum time in space?",
+                  "options": [
+                      { "value": "Sunita Williams", "marks": 1 },
+                      { "value": "Lisa Norwak", "marks": 0 },
+                      { "value": "Kalpana Chawla", "marks": 0 },
+                      { "value": "None of these", "marks": 0 }
+                  ]
+              },
+              {
+                  "question": "Which planet has the fastest revolution time?",
+                  "options": [
+                      { "value": "Saturn", "marks": 0 },
+                      { "value": "Mars", "marks": 0 },
+                      { "value": "Jupiter", "marks": 0 },
+                      { "value": "Mercury", "marks": 1 }
+                  ]
+              },
+              {
+                  "question": "An astronaut in outer space will observe sky as:",
+                  "options": [
+                      { "value": "Red", "marks": 0 },
+                      { "value": "Blue", "marks": 0 },
+                      { "value": "White", "marks": 0 },
+                      { "value": "Black", "marks": 1 }
+                  ]
+              },
+              {
+                  "question": "The planet nearest to the sun is :",
+                  "options": [
+                      { "value": "Saturn", "marks": 0 },
+                      { "value": "Mars", "marks": 0 },
+                      { "value": "Jupiter", "marks": 0 },
+                      { "value": "Mercury", "marks": 1 }
+                  ]
+              }
+          ],
+          "description": "Space GK"
+      },
+      {
+          "name": "Computer Quiz",
+          "id": 1,
+          "storageId": "computer",
+          "image-link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7b7MBS65f5qu8vJAtj8_lONeD17MAnfINQw&usqp=CAU",
+          "questions": [{
+                  "question": "How many Bits makes one Byte?",
+                  "options": [
+                      { "value": "16 Bits", "marks": 0 },
+                      { "value": "10 Bits", "marks": 0 },
+                      { "value": "4 Bits", "marks": 0 },
+                      { "value": "8 Bits", "marks": 1 }
+                  ]
+              },
+              {
+                  "question": "What is the full form of RAM?",
+                  "options": [
+                      { "value": "Random Access Memory.", "marks": 0 },
+                      { "value": "Read Only Memory", "marks": 0 },
+                      { "value": "Read Access Memory", "marks": 0 },
+                      { "value": "None Of These", "marks": 1 }
+                  ]
+              },
+              {
+                  "question": "Who is the founder of Facebook?",
+                  "options": [
+                      { "value": "Steve jobs", "marks": 0 },
+                      { "value": "Jeff Bezos", "marks": 0 },
+                      { "value": "Bill Gates", "marks": 0 },
+                      { "value": "Mark Zuckerberg", "marks": 1 }
+                  ]
+              },
+              {
+                  "question": "1 Kilobyte is equal to how many bytes?",
+                  "options": [
+                      { "value": "1000 bytes", "marks": 0 },
+                      { "value": "1024 bytes", "marks": 1 },
+                      { "value": "2024 bytes", "marks": 0 },
+                      { "value": "1624 bytes", "marks": 0 }
+                  ]
+              },
+              {
+                  "question": "Who is called Father of Computer?",
+                  "options": [
+                      { "value": "Benjamin", "marks": 0 },
+                      { "value": "Blaise Pascal", "marks": 0 },
+                      { "value": "Charles Babbage", "marks": 1 },
+                      { "value": "John Mauchly", "marks": 0 }
+                  ]
+              }
+          ],
+          "description": "Computer GK"
+      }
+  ]
+}

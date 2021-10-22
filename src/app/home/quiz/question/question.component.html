@@ -1,0 +1,27 @@
+<div class="container-head" fxLayout="row" fxLayoutAlign="center start" [ngStyle]="setBackgroundIamge()">
+    <div fxLayout="column" class="quiz-container" fxLayoutAlign="start start ">
+        <div class="question-div">
+          <h3>Ques: {{question.question}}</h3>
+        </div>
+        <form style="width: 100%;">
+          <mat-radio-group aria-label="Select an option" *ngIf="rendomisingOptions" [formControl]="optionsControl"
+            [(ngModel)]="answerValue">
+            <div class="options" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+              <div fxLayout="column" fxLayoutGap="10px" fxFlex="50%">
+                <mat-radio-button class="options-item" [ngClass]="getAnswerStyle(0)" (change)="optionSeleted(options[0], 0)">{{options[0].value}}
+                </mat-radio-button>
+                <mat-radio-button class="options-item" [ngClass]="getAnswerStyle(2)" (change)="optionSeleted(options[2], 2)">{{options[2].value}}
+                </mat-radio-button>
+              </div>
+              <div fxLayout="column" fxLayoutGap="10px" fxFlex="50%">
+                <mat-radio-button  class="options-item" [ngClass]="getAnswerStyle(1)" (change)="optionSeleted(options[1], 1)">{{options[1].value}}
+                </mat-radio-button>
+                <mat-radio-button class="options-item" [ngClass]="getAnswerStyle(3)" (change)="optionSeleted(options[3], 3)">{{options[3].value}}
+                </mat-radio-button>
+              </div>
+            </div>
+          </mat-radio-group>
+        </form>
+      </div>
+</div>
+

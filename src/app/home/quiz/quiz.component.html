@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" class="example-toolbar">
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="toolbar">
+    <h1 class="example-app-name">{{quizName}}</h1>
+    <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+</div>
+</mat-toolbar>
+<app-question [question]="indexQuestionValue" [questionImage]="questionImage" (nextQuestion) ="getNextQuestion($event)"></app-question>
